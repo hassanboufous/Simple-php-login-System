@@ -1,0 +1,129 @@
+:root {
+    --green : #27ae60;
+    --red : #e74c3c ;
+    --light-color : #666 ;
+    --light-bg : #eee ;
+    --black : #444 ;
+    --white : #fff ;
+    --box-shadow :0 5px 10px rgb(13, 10, 10) ;
+    --border:2px solid var(--black);
+    --light-green :#7dc59c;
+    --light-reed :#e0414e;
+}
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+}
+body {
+    background:linear-gradient(#abc85d,#3a9956,#04756e,#013a2b);
+    overflow-x: hidden;
+}
+section {
+    padding: 6px;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.btn {
+    padding: 10px 15px;
+    background-color:var(--light-reed);
+    text-align: center;
+    margin: 8px auto;
+    font-size: 20px;
+    color:#ddcfcf;
+    border-radius:5px;
+    text-transform: capitalize;
+    
+}
+.btn:hover {
+    cursor: pointer;
+    color:var(--white);
+    background-color:rgb(234, 12, 12);
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    
+}
+.form-container form {
+    width: 500px;
+    background:linear-gradient(#a4c497,#548342,#295b15,#0b2400);;
+    border-radius: 8px;
+    /* border: var(--border); */
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    text-align: center;
+    
+}
+.form-container form h3 {
+ margin-bottom: 20px;
+ font-size: 26px;
+ color: var(--black);
+ text-transform: capitalize;
+}
+.form-container form .box {
+ margin: 7px 0;
+ width: 100%;
+ border-radius:10px;
+ background-color:var(--light-bg);
+ border:var(--border);
+ padding: 14px;
+ font-size: 20px;
+ color:var(--black)
+}
+.form-container form p {
+ font-size: 20px;
+ margin-top: 8px;
+ color:rgb(149, 143, 143)
+}
+
+.form-container form p a{
+  color:rgb(152, 148, 148)
+}
+.form-container form p a:hover{
+ font-size: 20px;
+ text-decoration: underline;
+ color:var(--red)
+}
+/* ---------------------------------------------------------- */
+.alert-box {
+   position: sticky;
+   top:20px;
+   padding: 15px;
+   margin: 6px auto 0 auto;
+   display: flex;
+   width: 60%;
+   justify-content: space-between;
+   align-items:center;
+   z-index: 1000;
+   border-radius:5px;
+   background-color:var(--light-bg);
+   color:var(--light-reed);
+   font-size: 18px;
+   transition: all .6s ease-in-out ; 
+}
+
+.alert-box span {
+    color:rgb(207, 39, 39);
+    font-size: 18px;
+    font-weight: bold;
+}
+.alert-box span:hover {
+    color:red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+}
+ 
